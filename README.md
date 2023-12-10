@@ -1,17 +1,17 @@
 # Bitcoin Hash Object Protocol (BHO)
 
 ## Overview
-Bitcoin Hash Object (BHO) is an experimental protocol designed to extend Bitcoin's functionalities. This initiative emerged from a Twitter discussion regarding [Whether "Inscription" is a Bug or Feature](https://twitter.com/jolestar/status/1732711942563959185). BHO's goal is to utilize these inscriptions advantageously, treating them as a feature while tackling the technical challenges they present.
+Bitcoin Hash Object (BHO) is an experimental protocol that extends Bitcoin's functionalities. This initiative emerged from a Twitter discussion regarding [Whether "Inscription" is a Bug or Feature](https://twitter.com/jolestar/status/1732711942563959185). BHO aims to utilize these inscriptions advantageously, treating them as a feature while tackling the technical challenges they present.
 
 ## Objectives
 - To delve into and understand Bitcoin's protocol intricacies.
-- To conduct a thorough analysis of existing Bitcoin extension protocols, identifying their strengths and weaknesses.
+- To thoroughly analyze existing Bitcoin extension protocols, identifying their strengths and weaknesses.
 - To facilitate practical learning through hands-on protocol design.
 
 ## Key Challenges & Trade-offs
 
 1. **UTXO Trace**: 
-   - **Challenge**: Deciding on the use of UTXO for tracking asset transfers in extension protocols.
+   - **Challenge**: Deciding on using UTXO for tracking asset transfers in extension protocols.
    - **Trade-offs**: Leveraging UTXO might increase 'dust' and bloat the Bitcoin network, while not using it could limit the verification of asset ownership and the implementation of PSBT for exchanges.
 
 2. **Data Embedding**: 
@@ -44,9 +44,9 @@ Certainly! Here is the updated comparative analysis table of various Bitcoin ext
 |--------------------|----------------|------------------------|--------------------|----------------|----------|-----------------|----------------| -------- |
 | Data Embedding     | ?              | Witness Data           | In Inscription     | ?              | pubkey   | ?               | ?              | OP_RETURN|
 | Asset Type         | ?              | NFT                    | FT                 | NFT/FT         | FT       | ?               | FT             | FT       |
-| UTXO Trace         | #1             | Yes                    | Yes                | Yes            | Yes      | ?               | Yes            | No       |
+| UTXO Trace         | [#1](https://github.com/BitcoinHashObject/bho/issues/1)             | Yes                    | Yes                | Yes            | Yes      | ?               | Yes            | No       |
 | Extensibility      | ?              |                        | Off-Chain Upgrade  | ?              | ?        | Contract        | ?              | ?        |
-| DataFormat         | #2              | content-type           | JSON               | ?              | JSON     | ?               | ?              | ?        |
+| DataFormat         | [#2](https://github.com/BitcoinHashObject/bho/issues/2)              | content-type           | JSON               | ?              | JSON     | ?               | ?              | ?        |
 | Asset Issuance     | ?              | Issuer mint            | User mint          | User PoW Dmint | ?        | ?               | ?              | ?        |
 
 
