@@ -44,9 +44,9 @@ Certainly! Here is the updated comparative analysis table of various Bitcoin ext
 |--------------------|----------------|-------------------------------|---------------------------|--------------------|-----------------------|-----------------|----------------| ------------|
 | Data Embedding     | ?              | Witness                       | Witness(In Inscription)   | Witness            | TxOut::ScriptPubkey   | OP_RETURN       | ?              | OP_RETURN   |
 | Asset Type         | ?              | NFT                           | FT                        | NFT/FT             | FT                    | ?               | FT             | FT          |
-| UTXO Trace         | [#1](i1)       | Yes                           | Yes                       | Yes                | Yes                   | ?               | Yes            | No          |
+| UTXO Trace         | [#1][i1]       | Yes                           | Yes                       | Yes                | Yes                   | ?               | Yes            | No          |
 | Extensibility      | ?              | ?                             | Protocol Upgrade          | ?                  | ?                     | Contract        | ?              | ?           |
-| DataFormat         | [#2](i2)       | Arbitrary content & Cbor meta | JSON                      | Cbor dict          | JSON                  | ?               | ?              | ?           |
+| DataFormat         | [#2][i2]       | Arbitrary content & Cbor meta | JSON                      | Cbor dict          | JSON                  | ?               | ?              | ?           |
 | Asset Issuance     | ?              | Issuer mint                   | User mint                 | User PoW Dmint     | ?                     | ?               | ?              | ?           |
 
 
@@ -70,5 +70,5 @@ Certainly! Here is the updated comparative analysis table of various Bitcoin ext
 * [Taproot Assets](https://docs.lightning.engineering/the-lightning-network/taproot-assets/taproot-assets-protocol): Taproot Assets is primarily an on-chain protocol. Assets are issued on the bitcoin blockchain using taproot transactions.
 * [Runes](https://rodarmor.com/blog/runes/): New fungible token protocol for Bitcoin created by Ordinals author.
 
-i1: https://github.com/BitcoinHashObject/bho/issues/1
-i2: https://github.com/BitcoinHashObject/bho/issues/2
+[i1]: https://github.com/BitcoinHashObject/bho/issues/1
+[i2]: https://github.com/BitcoinHashObject/bho/issues/2
